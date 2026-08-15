@@ -42,9 +42,6 @@ export default function Footer() {
             <span className="text-[30px] text-primary">&#9829;</span> Première goutte
           </a>
           <p className="font-body-md text-xs text-[#d9c8c5]">Ensemble, sauvons des vies.</p>
-          <small className="mt-7 font-body-md text-[10px] text-[#bca8a5]">
-            &copy; 2024 Don de Sang. Tous droits réservés.
-          </small>
         </div>
         <div className="grid w-full flex-1 grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-[1.4fr_1fr_1.15fr_1fr] md:gap-11">
           <LinkColumn title="Informations" links={infoLinks} />
@@ -67,6 +64,16 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-auto mt-10 max-w-container-max border-t border-white/10 px-0 pt-6">
+        <p className="text-xs text-[#d9c8c5] leading-relaxed">
+          Seul un entretien et un examen médical réalisés par un professionnel de santé peuvent
+          confirmer votre aptitude au don de sang. Les informations présentées sur ce site sont
+          fournies à titre indicatif et ne remplacent pas un avis médical.
+        </p>
+        <small className="mt-4 block font-body-md text-[10px] text-[#bca8a5]">
+          &copy; 2024 Première goutte. Tous droits réservés.
+        </small>
       </div>
     </footer>
   )

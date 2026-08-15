@@ -19,7 +19,7 @@ export default function Parcours() {
       </div>
       <div className="relative w-full max-w-4xl mx-auto">
         <div className="absolute top-8 left-8 right-8 h-[2px] bg-outline-variant hidden md:block z-0"></div>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8 relative z-10">
           {steps.map((step, index) => (
             <div key={index} className="text-center space-y-4">
               <div

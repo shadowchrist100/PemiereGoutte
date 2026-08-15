@@ -215,7 +215,7 @@ export default function OuDonner() {
       </p>
 
       {filtered.length === 0 ? (
-        <div className="rounded-3xl border border-dashed border-outline-variant bg-surface-container-low p-14 text-center">
+        <div className="rounded-3xl border border-dashed border-outline-variant bg-surface-container-low p-8 md:p-14 text-center">
           <p className="font-body-md font-semibold text-on-background">
             Aucun centre ne correspond à vos critères.
           </p>

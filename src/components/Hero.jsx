@@ -20,10 +20,10 @@ export default function Hero() {
             Chaque jour, des patients ont besoin de sang pour être soignés. Un don peut faire toute la
             différence.
           </p>
-          <div className="flex flex-wrap gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a
               href="#simulateur"
-              className="bg-primary text-on-primary font-body-md text-body-md font-bold px-8 py-4 rounded-full hover:bg-surface-tint transition-colors text-center shadow-sm"
+              className="bg-primary text-on-primary font-body-md text-body-md font-bold px-8 py-4 rounded-full hover:bg-surface-tint transition-colors text-center shadow-sm sm:inline-block"
             >
               Découvrir si je peux donner
             </a>

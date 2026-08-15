@@ -54,7 +54,7 @@ export default function Preparation() {
         {phases.map((phase) => (
           <div
             key={phase.step}
-            className="rounded-3xl border border-outline-variant bg-surface-container-low p-8 flex flex-col"
+            className="rounded-3xl border border-outline-variant bg-surface-container-low p-6 md:p-8 flex flex-col"
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">

@@ -12,7 +12,7 @@ export default function Eligibility() {
   return (
     <section
       id="eligibility"
-      className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-surface-container-low py-20 rounded-[3rem]"
+      className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-surface-container-low py-12 md:py-20 rounded-[3rem]"
     >
       <div className="mb-16">
         <p className="font-label-caps text-label-caps text-primary mb-2">02. PUIS-JE DONNER ?</p>

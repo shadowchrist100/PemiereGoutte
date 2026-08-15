@@ -78,4 +78,20 @@ body {
   .cta .button:hover {
     background: #ffe1e1;
   }
+
+  @media (max-width: 768px) {
+    .cta {
+      min-height: 320px;
+      padding: 50px 24px;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+    }
+
+    .cta .button {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }

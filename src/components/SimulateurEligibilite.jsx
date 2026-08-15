@@ -95,8 +95,21 @@ export default function SimulateurEligibilite() {
           Simulez votre éligibilité au don de sang
         </h2>
         <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto mt-4">
-          Répondez à quelques questions simples. Ce test est indicatif : la décision finale revient
-          toujours au médecin de l'établissement.
+          Répondez à quelques questions simples. Ce test est indicatif : seule la décision d'un
+          professionnel de santé fait foi.
+        </p>
+      </div>
+
+      <div
+        role="note"
+        className="mb-10 flex items-start gap-3 rounded-2xl border border-error/30 bg-error-container/60 px-5 py-4"
+      >
+        <Icon name="info" className="text-error text-2xl shrink-0 mt-0.5" />
+        <p className="text-sm text-on-error-container">
+          <span className="font-bold">Important :</span> seuls un entretien et un examen médical
+          réalisés par un professionnel de santé peuvent confirmer votre aptitude au don de sang.
+          Ce simulateur fournit une pré-évaluation indicative et ne remplace en aucun cas
+          l'avis médical.
         </p>
       </div>
 
@@ -211,7 +224,7 @@ export default function SimulateurEligibilite() {
         </form>
 
         <div
-          className={`rounded-3xl border p-8 ${
+          className={`rounded-3xl border p-6 md:p-8 ${
             result?.state === 'invalid'
               ? 'border-amber-300 bg-amber-50'
               : !showResult

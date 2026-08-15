@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fcf9f8;
+  color: #1b1b1c;
+}
+
+.progress-bar-inner {
+  transition: width 0.5s ease-in-out;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+@layer components {
+  .cta {
+    min-height: 365px;
+    padding: 70px max(8vw, 80px);
+    color: #fff;
+    background:
+      linear-gradient(90deg, #301110d9 10%, #6d1f1bbd 60%, transparent),
+      url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1600&q=85') center / cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .cta .eyebrow {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .cta h2 {
+    font-family: 'Newsreader', serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 490px;
+    color: #fff;
+  }
+
+  .cta p:not(.eyebrow) {
+    max-width: 385px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .cta .button {
+    display: inline-block;
+    background: #fff;
+    color: #d71920;
+    margin-top: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease;
+  }
+
+  .cta .button:hover {
+    background: #ffe1e1;
+  }
+}

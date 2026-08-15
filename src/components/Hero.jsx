@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute inset-y-0 right-0 w-full md:w-[62%]">
         <img
           alt="Personne souriante regardant au loin avec espoir"
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-top"
           src={heroImage}
         />
       </div>

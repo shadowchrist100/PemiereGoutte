@@ -10,9 +10,9 @@ const steps = [
 
 export default function Parcours() {
   return (
-    <section id="parcours" className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+    <section id="parcours" className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
       <div className="mb-16 text-center md:text-left">
-        <p className="font-label-caps text-label-caps text-primary mb-2">03. COMMENT ÇA SE PASSE ?</p>
+        <p className="font-label-caps text-label-caps text-primary mb-2">04. COMMENT ÇA SE PASSE ?</p>
         <h2 className="font-headline-md text-headline-md text-on-background">
           Un parcours simple et encadré
         </h2>

@@ -25,7 +25,7 @@ const impacts = [
 
 export default function PourquoiDonner() {
   return (
-    <section id="pourquoi" className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+    <section id="pourquoi" className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
       <div className="mb-12">
         <p className="font-label-caps text-label-caps text-primary mb-2">01. POURQUOI DONNER ?</p>
         <h2 className="font-headline-md text-headline-md text-on-background">

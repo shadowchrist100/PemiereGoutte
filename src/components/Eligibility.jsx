@@ -12,7 +12,7 @@ export default function Eligibility() {
   return (
     <section
       id="eligibility"
-      className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap bg-surface-container-low py-20 rounded-[3rem]"
+      className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-surface-container-low py-20 rounded-[3rem]"
     >
       <div className="mb-16">
         <p className="font-label-caps text-label-caps text-primary mb-2">02. PUIS-JE DONNER ?</p>
@@ -35,9 +35,12 @@ export default function Eligibility() {
         ))}
       </div>
       <div className="text-center">
-        <button className="bg-primary text-on-primary font-body-md text-body-md font-bold px-8 py-4 rounded-full hover:bg-surface-tint transition-colors shadow-sm">
+        <a
+          href="#simulateur"
+          className="inline-block bg-primary text-on-primary font-body-md text-body-md font-bold px-8 py-4 rounded-full hover:bg-surface-tint transition-colors shadow-sm"
+        >
           Faire le test d'éligibilité
-        </button>
+        </a>
       </div>
     </section>
   )

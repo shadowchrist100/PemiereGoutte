@@ -24,26 +24,38 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
-      <h2 className="font-headline-md text-headline-md text-on-background mb-8">
-        Vous vous posez ces questions ?
-      </h2>
+    <section id="faq" className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <div className="mb-8">
+        <p className="font-label-caps text-label-caps text-primary mb-2">08. QUESTIONS FRÉQUENTES</p>
+        <h2 className="font-headline-md text-headline-md text-on-background">
+          Vous vous posez ces questions ?
+        </h2>
+      </div>
       <div className="space-y-4">
         {faqs.map((faq, index) => {
           const open = openIndex === index
+          const panelId = `faq-panel-${index}`
+          const buttonId = `faq-button-${index}`
           return (
             <div key={index} className="border-b border-outline-variant pb-4">
-              <h3
-                className="font-body-lg font-bold text-on-background flex justify-between items-center cursor-pointer select-none"
+              <button
+                id={buttonId}
+                aria-expanded={open}
+                aria-controls={panelId}
                 onClick={() => setOpenIndex(open ? -1 : index)}
+                className="w-full flex justify-between items-center gap-4 text-left cursor-pointer select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md"
               >
-                {faq.q}
+                <span className="font-body-lg font-bold text-on-background">{faq.q}</span>
                 <Icon
                   name="add"
-                  className={`text-primary transition-transform duration-200 ${open ? 'rotate-45' : ''}`}
+                  className={`text-primary shrink-0 transition-transform duration-200 ${open ? 'rotate-45' : ''}`}
                 />
-              </h3>
-              {open && <p className="text-on-surface-variant mt-2 text-sm">{faq.a}</p>}
+              </button>
+              {open && (
+                <p id={panelId} role="region" aria-labelledby={buttonId} className="text-on-surface-variant mt-2 text-sm">
+                  {faq.a}
+                </p>
+              )}
             </div>
           )
         })}

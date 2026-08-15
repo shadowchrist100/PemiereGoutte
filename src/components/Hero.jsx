@@ -10,7 +10,6 @@ export default function Hero() {
           className="h-full w-full object-cover object-center"
           src={heroImage}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-surface/75 via-surface/35 to-transparent md:bg-gradient-to-r md:from-surface md:from-[5%] md:via-surface/70 md:via-[38%] md:to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto flex min-h-[calc(100svh-68px)] max-w-container-max items-center px-margin-mobile py-10 md:px-margin-desktop md:py-14">
